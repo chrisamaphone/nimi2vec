@@ -1,3 +1,5 @@
+## nimi2vec, aka semantemusi
+
 An implementation of "semantle" (see https://semantle.novalis.org/) for the Toki Pona conlang (see https://tokipona.org/).
 
 Usage:
