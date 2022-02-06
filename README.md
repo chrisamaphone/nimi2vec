@@ -2,10 +2,9 @@ An implementation of "semantle" (see https://semantle.novalis.org/) for the Toki
 
 Usage:
 
-<code>$ python3
->>> exec(open('semante-musi.py').read())
->>> guess('your_guess')
-</code>
+    $ python3
+    >>> exec(open('semante-musi.py').read())
+    >>> guess('your_guess')
 
 Returns a number between 0-1 for similarity.
 
