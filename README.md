@@ -9,6 +9,7 @@ Usage:
     >>> guess('your_guess')
 
 Returns a number between 0-1 for similarity.
+The target word is stored in a variable <code>secret_word</code>, so you can cheat and look at it, or poke around with other model queries, like <code>model.most_similar(secret_word)</code>.
 
 
 Corpus sources:
