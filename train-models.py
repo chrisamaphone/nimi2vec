@@ -2,13 +2,12 @@
 import gensim, logging, os
 from gensim.models import Word2Vec
 from gensim.test.utils import datapath
-from preproc import read_input
+from preproc import preprocess
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-corpus_relpath = 'corpus/mdm-plus-pu.txt';
-corpus_path = os.path.abspath(corpus_relpath);
+corpus_name = 'mdm-plus-pu';
 
-### n.b.: replaced this with read_input fn in preproc to split out
+### n.b.: replaced this with preprocess fn in preproc to split out
 ####  punctuation
 # sentences = []
 # def read_input(path):
@@ -18,7 +17,7 @@ corpus_path = os.path.abspath(corpus_relpath);
 #             sentence = line.split()
 #             sentences.append(sentence)
 
-sentences = read_input(corpus_path);
+sentences = preprocess(corpus_name);
 
 logging.info('Done reading corpus file');
 
