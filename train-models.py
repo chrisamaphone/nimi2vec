@@ -5,7 +5,8 @@ from gensim.test.utils import datapath
 from preproc import preprocess
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-corpus_name = 'mdm-plus-pu';
+# corpus_name = 'mdm-plus-pu';
+corpus_name = 'all';
 
 ### n.b.: replaced this with preprocess fn in preproc to split out
 ####  punctuation

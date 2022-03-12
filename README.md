@@ -5,7 +5,7 @@ An implementation of "semantle" (see https://semantle.novalis.org/) for the Toki
 Usage:
 
     $ python3
-    >>> exec(open('semante-musi.py').read())
+    >>> exec(open('semantemusi.py').read())
     >>> guess('your_guess')
 
 Returns a number between 0-1 for similarity.
