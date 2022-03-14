@@ -28,7 +28,8 @@ model = gensim.models.Word2Vec(
         vector_size=100,
         window=5,
         sg=1, # added: try skipgram model
-        min_count=2)
+        min_count=2,
+        epochs=10)
         # , workers=10)
 model.train(sentences, total_examples=len(sentences), epochs=6)
 

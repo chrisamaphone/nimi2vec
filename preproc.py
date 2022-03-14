@@ -16,14 +16,14 @@ def process_line(line, start):
     current_sentence = start
     tokens = re.findall(r"[\w']+|[.,!?;:]", line);
     for t in tokens:
-        current_sentence.append(t);
+        # current_sentence.append(t);
         if (t in terminal and len(current_sentence) > 0):
             sentences_from_line.append(current_sentence.copy())
             current_sentence = []
-        # elif (t in punct):
-        #    continue
-        # else:
-        #     current_sentence.append(t)
+        elif (t in punct): # ignore punctuation
+           continue
+        else:
+            current_sentence.append(t)
     # if the sentence doesn't end in a terminal, include it anyway
     # if len(current_sentence) > 0:
     sentences_from_line.append(current_sentence.copy())

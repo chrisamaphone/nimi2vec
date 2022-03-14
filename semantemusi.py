@@ -30,7 +30,8 @@ def getPct(value):
     return (value + 1)/2 * 100;
 
 def guess(guessed_word):
-    return getPct(model.similarity(guessed_word, secret_word));
+    # return getPct(model.similarity(guessed_word, secret_word));
+    return 100*model.similarity(guessed_word, secret_word);
 
 # Open wordlist
 possible_words = []
